@@ -10,6 +10,11 @@ public class Student {
     private int age; // Age of the student
     private List<Float> grades = new ArrayList<>(); // List of grades
 
+    public Student(String name, String id, int age) {
+        this.name = name;
+        this.studentID = id;
+        this.age = age;
+    }
 
     // Add a grade to the student's grade list
     public void AddGrade(float grade) {
