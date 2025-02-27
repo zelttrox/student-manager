@@ -6,11 +6,11 @@ import java.util.List;
 public class Student {
     
     private String name; // Name of the student
-    private String studentID; // ID of the student
+    private int studentID; // ID of the student
     private int age; // Age of the student
     private List<Float> grades = new ArrayList<>(); // List of grades
 
-    public Student(String name, String id, int age) {
+    public Student(String name, int id, int age) {
         this.name = name;
         this.studentID = id;
         this.age = age;
@@ -36,8 +36,8 @@ public class Student {
     public String getName() { return name;}
 
     // Student ID
-    public void setStudentID(String studentID) {this.studentID = studentID;}
-    public String getStudentID() { return studentID;}
+    public void setStudentID(int studentID) {this.studentID = studentID;}
+    public int getStudentID() { return studentID;}
 
     // Student age
     public void setAge(int age) {this.age = age;}

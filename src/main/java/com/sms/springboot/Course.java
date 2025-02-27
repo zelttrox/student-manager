@@ -5,9 +5,12 @@ import java.util.List;
 
 public class Course {
     private String courseName;
-    private String courseCode;
+    private int courseCode;
     private int creditHours;
     private List<Student> students = new ArrayList<>();
+
+    public Course(String courseName, int courseCode, int creditHours, List<Student> students) {
+    }
 
     // Adds a student to the course
     public void EnrollStudent(Student student) {
@@ -25,8 +28,8 @@ public class Course {
     public String getCourseName() {return courseName;}
 
     // Course code
-    public void setCourseCode(String courseCode) {this.courseCode = courseCode;}
-    public String getCourseCode() {return courseCode;}
+    public void setCourseCode(int courseCode) {this.courseCode = courseCode;}
+    public int getCourseCode() {return courseCode;}
 
     // Credit hours
     public void setCreditHours(int creditHours) {this.creditHours = creditHours;}
