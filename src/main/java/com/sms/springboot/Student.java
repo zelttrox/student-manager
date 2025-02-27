@@ -10,6 +10,7 @@ public class Student {
     private int age; // Age of the student
     private List<Float> grades = new ArrayList<>(); // List of grades
 
+    // Constructor
     public Student(String name, int id, int age) {
         this.name = name;
         this.studentID = id;

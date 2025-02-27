@@ -4,12 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Course {
-    private String courseName;
-    private int courseCode;
-    private int creditHours;
-    private List<Student> students = new ArrayList<>();
+    private String courseName; // Name of the course
+    private int courseCode; // Code of the course
+    private int creditHours; // Number of hours
+    private List<Student> students = new ArrayList<>(); // List of students enrolled to the course
 
+    // Constructor
     public Course(String courseName, int courseCode, int creditHours, List<Student> students) {
+        this.courseName = courseName;
+        this.courseCode = courseCode;
+        this.creditHours = creditHours;
+        this.students = students;
     }
 
     // Adds a student to the course
